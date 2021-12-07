@@ -3,9 +3,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  height: 100vh/8;
+  height: 12.5vh;
+  width: 100%;
   background-color: white;
 }
 
@@ -30,4 +32,8 @@ a {
 footer {
   height: 10vh;
   background-color: rgb(46, 46, 46);
+}
+
+#navfix {
+  height: 12.5vh
 }
