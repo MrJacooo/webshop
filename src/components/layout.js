@@ -17,7 +17,7 @@ export default function Layout() {
                     </Typography>
                 </div>
                 <div>
-                    <Link to="#">Home</Link>
+                    <Link to="/home">Home</Link>
                     <Link to="#">Account</Link>
                     <Link to="/" onClick={signOut}>Sign Out</Link>
                 </div>

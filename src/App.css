@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*logo color top:#cc1168, logo color bottom: #c30622 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 nav {
   position: fixed;
@@ -31,9 +32,52 @@ a {
 
 footer {
   height: 10vh;
-  background-color: rgb(46, 46, 46);
+  background-color: #c30622;
 }
 
 #navfix {
-  height: 12.5vh
+  height: 15vh;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.houseSmall {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.houseSmall div {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.houseSmall h4 {
+  margin-bottom: 12px;
+}
+
+.detail {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.houseSmall button {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: #c30622;
+}
+.houseSmall button:hover {
+  background-color: #cc1139;
 }
