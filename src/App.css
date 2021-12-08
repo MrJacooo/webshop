@@ -30,59 +30,6 @@ a {
   text-decoration: none;
   font-size: 1.1rem;
 }
-
-#navfix {
-  height: 15vh;
-}
-
-.thumbnail {
-  width: 300px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-left: -10px;
-  margin-top: -10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.houseSmall {
-  display: flex;
-  flex-direction: row;
-  height: 200px;
-}
-
-.houseSmall div {
-  margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.houseSmall h4 {
-  margin-bottom: 12px;
-}
-
-.detail {
-  margin-top: 5px;
-  margin-bottom: 0px;
-  overflow: hidden;
-}
-
-.houseSmall button {
-  align-self: flex-end;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  background-color: #c30622;
-}
-.houseSmall button:hover {
-  background-color: #cc1139;
-}
-
-#mainText {
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
 footer {
   height: 35vh;
   background-color: #c30622;
@@ -105,3 +52,4 @@ footer {
 .footerContent div {
   margin-top: 20px;
 }
+
