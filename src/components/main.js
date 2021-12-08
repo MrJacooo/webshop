@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Typography, Container } from "@mui/material";
+import { Typography, Container, Paper } from "@mui/material";
 import CircularProgress from '@mui/material/CircularProgress';
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore"
@@ -26,8 +26,14 @@ export default function Main() {
         }, []
     )
     return (
-        <div id="main" style={{ backgroundImage: "url(/images/background.jpg)", backgroundRepeat: "no-repeat",backgroundAttachment: "fixed", backgroundPosition: "right top", minHeight: "100vh" }}>
+        <div id="main" style={{ backgroundImage: "url(/images/background.jpg)", backgroundRepeat: "no-repeat",backgroundAttachment: "fixed", backgroundPosition: "right top", minHeight: "80vh"}}>
             <Container maxWidth="lg">
+                <div id="mainText">
+                    <Typography variant="h4">
+                        Rent your next Home.
+                    </Typography>
+    
+                </div>
                 <Grid container direction="row" justifyContent="flex-start" alignItems="flex-start" spacing={6}>
                 {!houses ? <Backdrop
                     sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}

@@ -23,10 +23,10 @@ export default function HouseSmall({ props }) {
         },[]
     )
     return (
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6}>
             <Paper elevation="9">
                 <div className="houseSmall">
-                    { image ?<img className="thumbnail" src={image}/>:<Skeleton className="thumbnail" height={220} width={300} variant="rectangular" />}
+                    { image ?<img className="thumbnail" src={image} onClick={() => navigate(`/home/${props.id}`)} style={{cursor: "pointer"}}/>:<Skeleton className="thumbnail" height={220} width={300} variant="rectangular" />}
                     <div>
                         <div>
                             <h4>{props.name}</h4>

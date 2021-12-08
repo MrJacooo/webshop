@@ -10,6 +10,7 @@ nav {
   height: 12.5vh;
   width: 100%;
   background-color: white;
+  z-index: 100;
 }
 
 nav div {
@@ -25,14 +26,9 @@ nav div * {
 }
 
 a {
-  color: black;
+  color: inherit;
   text-decoration: none;
   font-size: 1.1rem;
-}
-
-footer {
-  height: 10vh;
-  background-color: #c30622;
 }
 
 #navfix {
@@ -80,4 +76,32 @@ footer {
 }
 .houseSmall button:hover {
   background-color: #cc1139;
+}
+
+#mainText {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  height: 35vh;
+  background-color: #c30622;
+}
+
+#subFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  color: rgb(226, 226, 226);
+  background-color: #41040d;
+}
+
+.footerContent {
+  color: rgb(226, 226, 226);
+  text-align: center;
+}
+
+.footerContent div {
+  margin-top: 20px;
 }
