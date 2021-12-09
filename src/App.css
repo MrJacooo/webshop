@@ -8,6 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 12.5vh;
+  max-height: 100px;
   width: 100%;
   background-color: white;
   z-index: 100;
@@ -53,3 +54,15 @@ footer {
   margin-top: 20px;
 }
 
+#navfix {
+  height: 15vh;
+  max-height: 130px;
+}
+
+
+.red {
+  background-color: #c30622 !important;
+}
+.red:hover {
+  background-color: #cc1139 !important;
+}

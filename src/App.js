@@ -7,6 +7,8 @@ import House from './components/house';
 import { AuthProvider } from './contexts/authcontext';
 import SignUp from './components/signup';
 import RequireAuth from './components/requireauth';
+import About from './components/about';
+import Rent from './components/rent';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="signup" element={<SignUp />}></Route>
             <Route path="home" element={<RequireAuth><Layout /></RequireAuth>}>
               <Route index element={<Main />}></Route>
+              <Route path="about" element={<About />}></Route>
+              <Route path="rent" element={<Rent />}></Route>
               <Route path=":houseId" element={<House />}></Route>
             </Route>
           </Routes>

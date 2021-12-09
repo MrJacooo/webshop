@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Grid, Paper, Skeleton, Typography } from "@mui/material";
 import { Box, grid } from "@mui/system";
 import { storage } from "../firebase";
-import {ref, getDownloadURL } from "firebase/storage";
+import { ref, getDownloadURL } from "firebase/storage";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router";
@@ -12,26 +12,26 @@ export default function HouseSmall({ props }) {
     const [image, setImage] = useState(false)
     const navigate = useNavigate()
 
-    function getTitleImage(){
+    function getTitleImage() {
         getDownloadURL(ref(storage, props.displayImage))
-        .then(url => setImage(url))
+            .then(url => setImage(url))
     }
 
     useEffect(
         () => {
             getTitleImage()
-        },[]
+        }, []
     )
     return (
         <Grid item xs={12} lg={6}>
             <Paper elevation="9">
                 <div className="houseSmall">
-                    { image ?<img className="thumbnail" src={image} onClick={() => navigate(`/home/${props.id}`)} style={{cursor: "pointer"}}/>:<Skeleton className="thumbnail" height={220} width={300} variant="rectangular" />}
+                    {image ? <img className="thumbnail" src={image} onClick={() => navigate(`/home/${props.id}`)} style={{ cursor: "pointer" }} /> : <Skeleton className="thumbnail" height={220} width={300} variant="rectangular" />}
                     <div>
                         <div>
                             <h4>{props.name}</h4>
-                            <p className="detail">{props.price}$ per night</p>
-                            <p className="detail">{props.size} Square Meters</p>  
+                            <p className="detail">{props.price}$ per Week</p>
+                            <p className="detail">{props.size} Square Meters</p>
                             <p className="detail">{props.rooms} Rooms</p>
                         </div>
                         <Button variant="contained" onClick={() => navigate(`/home/${props.id}`)}>rent now</Button>
