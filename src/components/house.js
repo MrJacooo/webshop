@@ -11,6 +11,7 @@ import { HouseOutlined } from "@mui/icons-material";
 import { ImageList, ImageListItem } from "@mui/material";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import { exactProp } from "@mui/utils";
 
 export default function House() {
     const { houseId } = useParams()
@@ -19,6 +20,10 @@ export default function House() {
     const [displayImage, setDisplayImage] = useState()
     const [floorplan, setFloorplan] = useState()
     const navigate = useNavigate()
+
+    async function getPeople() {
+        let data = await fetch("...").then(response => response.json())
+    }
 
     async function getData() {
         //Create Temp vars to avoid problems with usestate

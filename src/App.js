@@ -9,6 +9,7 @@ import SignUp from './components/signup';
 import RequireAuth from './components/requireauth';
 import Account from './components/account';
 import Rent from './components/rent';
+import About from './components/about';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="home" element={<RequireAuth><Layout /></RequireAuth>}>
               <Route index element={<Main />}></Route>
               <Route path="account" element={<Account />}></Route>
+              <Route path="about" element={<About />}></Route>
               <Route path="rent/:houseId" element={<Rent />}></Route>
               <Route path=":houseId" element={<House />}></Route>
             </Route>

@@ -12,7 +12,7 @@ export default function Layout() {
         <div>
             <nav>
                 <div>
-                    <img src="/images/logo.jpg" height={window.innerHeight / 8} />
+                    <Link to="/home" ><img src="/images/logo.jpg" height={window.innerHeight / 8 - 10} /></Link>
                     <Typography variant="h5">
                         Kashiya
                     </Typography>
@@ -32,7 +32,7 @@ export default function Layout() {
                         <Grid item xs={12} lg={6}>
                             <h4>About</h4>
                             <p>This website was designed to enable people to rent their own asian dream home. It is done by providing an easy platform to Asian homeowners to rent their home on. We hope that one day our dream of being able to provide everyone with a Asian vacation home will become possible.</p>
-                            <Link to="#">Learn more</Link>
+                            <Link to="/home/about">Learn more</Link>
                         </Grid>
                         <Grid item xs={12} lg={6}>
                             <h4>Credits</h4>

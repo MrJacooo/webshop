@@ -40,7 +40,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
+  padding: 20px;
   color: rgb(226, 226, 226);
   background-color: #41040d;
 }
