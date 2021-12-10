@@ -7,7 +7,7 @@ import House from './components/house';
 import { AuthProvider } from './contexts/authcontext';
 import SignUp from './components/signup';
 import RequireAuth from './components/requireauth';
-import About from './components/about';
+import Account from './components/account';
 import Rent from './components/rent';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
             <Route path="signup" element={<SignUp />}></Route>
             <Route path="home" element={<RequireAuth><Layout /></RequireAuth>}>
               <Route index element={<Main />}></Route>
-              <Route path="about" element={<About />}></Route>
-              <Route path="rent" element={<Rent />}></Route>
+              <Route path="account" element={<Account />}></Route>
+              <Route path="rent/:houseId" element={<Rent />}></Route>
               <Route path=":houseId" element={<House />}></Route>
             </Route>
           </Routes>

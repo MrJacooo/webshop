@@ -67,7 +67,7 @@ export default function House() {
                         <p>{house.rooms} Rooms</p>
                         <p>{house.price}$ per Week</p>
                         <Link style={{ color: "red" }} to="/flyer.pdf" download target="_blank" >Download Flyer</Link><br />
-                        <Button variant="contained" size="large" className="red" onClick={() => navigate(`/home/${houseId}`)}>rent now</Button>
+                        <Button variant="contained" size="large" className="red" onClick={() => navigate(`/home/rent/${houseId}`)}>rent now</Button>
                     </Grid>
                     <Grid item xs={12}>
                         <h2>{house.name}</h2>

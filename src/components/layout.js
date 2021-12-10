@@ -19,8 +19,8 @@ export default function Layout() {
                 </div>
                 <div>
                     <Link to="/home">Home</Link>
-                    <Link to="/home">About</Link>
-                    <Link to="#">Account</Link>
+                    <Link to="/home/about">About</Link>
+                    <Link to="/home/account">Account</Link>
                     <Link to="/" onClick={signOut}>Sign Out</Link>
                 </div>
             </nav>
@@ -29,12 +29,12 @@ export default function Layout() {
             <footer>
                 <Container maxWidth="md">
                     <Grid container columnSpacing={5} className="footerContent">
-                        <Grid item xs={6}>
+                        <Grid item xs={12} lg={6}>
                             <h4>About</h4>
                             <p>This website was designed to enable people to rent their own asian dream home. It is done by providing an easy platform to Asian homeowners to rent their home on. We hope that one day our dream of being able to provide everyone with a Asian vacation home will become possible.</p>
                             <Link to="#">Learn more</Link>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} lg={6}>
                             <h4>Credits</h4>
                             <p>This Website is only a Mockupproject, all of the Houses shown on this place are actually being sold on one another website. You may visit them if you are interested in traditional Japanese country homes.</p>
                             <a href="https://www.koryoya.com" target="_blank" rel="noopener noreferrer">Learn more</a>
